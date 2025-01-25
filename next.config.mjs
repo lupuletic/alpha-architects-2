@@ -9,12 +9,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  distDir: '.next',
   experimental: {
     webpackBuildWorker: true,
   },
   trailingSlash: true,
-}
+  // Removed output: 'export' to use standard Next.js rendering
+};
 
-export default nextConfig
+export default nextConfig;

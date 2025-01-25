@@ -1,19 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',
   images: {
     unoptimized: true,
   },
-  experimental: {
-    webpackBuildWorker: true,
-  },
+  distDir: '.next',
   trailingSlash: true,
-  // Removed output: 'export' to use standard Next.js rendering
-};
+}
 
-export default nextConfig;
+export default nextConfig
+

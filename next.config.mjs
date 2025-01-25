@@ -4,9 +4,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  distDir: '.next',
   trailingSlash: true,
+  // Ensure CSS is properly handled
+  optimizeFonts: false,
+  compiler: {
+    removeConsole: false,
+  },
 }
 
 export default nextConfig
-
